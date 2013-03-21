@@ -17,6 +17,8 @@ end
 
 module SampleApp
   class Application < Rails::Application
+      
+      config.active_record.whitelist_attributes = true
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -64,5 +66,6 @@ module SampleApp
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+      
   end
 end
